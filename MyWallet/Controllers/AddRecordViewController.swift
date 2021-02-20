@@ -130,7 +130,6 @@ class AddRecordViewController: UIViewController {
         
         if directionSegmentedControl.selectedSegmentIndex == 0 {
             categoryTextField.text = (expenseCategoriesList.count > 0) ? expenseCategoriesList[model.expenseIndex].name : ""
-            //            if model.expenseIndex <= categoryPicker.numberOfRows(inComponent: 0) {
             categoryPicker.selectRow(model.expenseIndex, inComponent: 0, animated: false)
             //            }
             prefixLabel.text = "-" + NSLocale.defaultCurrency

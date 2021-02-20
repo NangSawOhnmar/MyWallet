@@ -10,13 +10,13 @@ import CoreData
 
 class RecordViewController: UIViewController, NSFetchedResultsControllerDelegate {
 
+    @IBOutlet weak var firstRecordLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
     var commitPredicate: NSPredicate?
     var fetchedResultsController: NSFetchedResultsController<Records>!
 
     let style: Style = Style.myApp
-    var coverImageView = UIImageView()
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return style.preferredStatusBarStyle
@@ -69,18 +69,13 @@ class RecordViewController: UIViewController, NSFetchedResultsControllerDelegate
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 
-//        if fetchedResultsController.fetchedObjects?.count == 0 {
-//            let coverImage = UIImage(named: "AddFirstRecord")!
-//            coverImageView.image = coverImage
-//            coverImageView.contentMode = .scaleAspectFit
-//            coverImageView.frame = CGRect(x: 20, y: 100, width: tableView.frame.width-100, height: 300)
-//            view.addSubview(coverImageView)
-//
-//        } else {
-//            DispatchQueue.main.async {
-//                self.coverImageView.removeFromSuperview()
-//            }
-//        }
+        if fetchedResultsController.fetchedObjects?.count == 0 {
+            self.firstRecordLabel.isHidden = false
+        } else {
+            DispatchQueue.main.async {
+                self.firstRecordLabel.isHidden = true
+            }
+        }
     }
 }
 

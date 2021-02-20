@@ -69,7 +69,6 @@
 		9E23B98225DE16AB0037343C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9E23B98425DE16AB0037343C /* ChooseCurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCurrencyViewController.swift; sourceTree = "<group>"; };
 		9E23B98725DE16AB0037343C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9E23B98A25DE16AB0037343C /* MyWallet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyWallet.xcdatamodel; sourceTree = "<group>"; };
 		9E23B98C25DE16AE0037343C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E23B98F25DE16AE0037343C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E23B99125DE16AE0037343C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -176,7 +175,6 @@
 				9E2A430025DE3B000083810E /* Controllers */,
 				9E2A432625DE52470083810E /* Extensions */,
 				9E23B99125DE16AE0037343C /* Info.plist */,
-				9E23B98925DE16AB0037343C /* MyWallet.xcdatamodeld */,
 			);
 			path = MyWallet;
 			sourceTree = "<group>";
@@ -655,16 +653,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		9E23B98925DE16AB0037343C /* MyWallet.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				9E23B98A25DE16AB0037343C /* MyWallet.xcdatamodel */,
-			);
-			currentVersion = 9E23B98A25DE16AB0037343C /* MyWallet.xcdatamodel */;
-			path = MyWallet.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		9E2A434425DE571F0083810E /* MyWallet.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
