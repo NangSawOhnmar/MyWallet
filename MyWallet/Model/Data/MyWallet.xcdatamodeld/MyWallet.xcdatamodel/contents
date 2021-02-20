@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D74" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Accounts" representedClassName="Accounts" syncable="YES" codeGenerationType="class">
+        <attribute name="currency" optional="YES" attributeType="String"/>
+        <attribute name="initial" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="uid" optional="YES" attributeType="String"/>
+        <relationship name="relatedRecords" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Records" inverseName="relatedAccount" inverseEntity="Records"/>
+    </entity>
+    <entity name="Categories" representedClassName="Categories" syncable="YES" codeGenerationType="class">
+        <attribute name="budget" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="direction" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="generalId" optional="YES" attributeType="String"/>
+        <attribute name="icon" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="parent" optional="YES" attributeType="String"/>
+        <attribute name="sortId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String"/>
+        <relationship name="relatedRecords" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Records" inverseName="relatedCategory" inverseEntity="Records"/>
+    </entity>
+    <entity name="Records" representedClassName="Records" syncable="YES" codeGenerationType="class">
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="datetime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="direction" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="month" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="note" optional="YES" attributeType="String"/>
+        <attribute name="reported" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String"/>
+        <attribute name="year" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="relatedAccount" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Accounts" inverseName="relatedRecords" inverseEntity="Accounts"/>
+        <relationship name="relatedCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Categories" inverseName="relatedRecords" inverseEntity="Categories"/>
+    </entity>
+    <elements>
+        <element name="Accounts" positionX="-524.3829345703125" positionY="-25.3092041015625" width="128" height="118"/>
+        <element name="Categories" positionX="-92.324462890625" positionY="-194.1629028320312" width="128" height="178"/>
+        <element name="Records" positionX="-272.5107421875" positionY="-399.4425354003906" width="128" height="179"/>
+    </elements>
+</model>

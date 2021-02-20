@@ -3,29 +3,120 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F0A38D7D7EEC0AB91D299D6 /* Pods_MyWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 154D9A9E183BC1D7B7FCCDFC /* Pods_MyWallet.framework */; };
 		9E23B98125DE16AB0037343C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23B98025DE16AB0037343C /* AppDelegate.swift */; };
 		9E23B98325DE16AB0037343C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23B98225DE16AB0037343C /* SceneDelegate.swift */; };
-		9E23B98525DE16AB0037343C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23B98425DE16AB0037343C /* ViewController.swift */; };
+		9E23B98525DE16AB0037343C /* ChooseCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23B98425DE16AB0037343C /* ChooseCurrencyViewController.swift */; };
 		9E23B98825DE16AB0037343C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E23B98625DE16AB0037343C /* Main.storyboard */; };
-		9E23B98B25DE16AB0037343C /* MyWallet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E23B98925DE16AB0037343C /* MyWallet.xcdatamodeld */; };
 		9E23B98D25DE16AE0037343C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E23B98C25DE16AE0037343C /* Assets.xcassets */; };
 		9E23B99025DE16AE0037343C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E23B98E25DE16AE0037343C /* LaunchScreen.storyboard */; };
+		9E2A430825DE4B690083810E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A430725DE4B690083810E /* HomeViewController.swift */; };
+		9E2A430B25DE4B940083810E /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A430A25DE4B940083810E /* RecordViewController.swift */; };
+		9E2A430E25DE4BAC0083810E /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A430D25DE4BAC0083810E /* BudgetViewController.swift */; };
+		9E2A431225DE4BB90083810E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A431125DE4BB90083810E /* SettingsViewController.swift */; };
+		9E2A431925DE4C7D0083810E /* CostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A431825DE4C7D0083810E /* CostCell.swift */; };
+		9E2A431D25DE512E0083810E /* PersistentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A431C25DE512E0083810E /* PersistentModel.swift */; };
+		9E2A432125DE519E0083810E /* Facade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A432025DE519E0083810E /* Facade.swift */; };
+		9E2A432425DE52060083810E /* MWMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A432325DE52060083810E /* MWMonth.swift */; };
+		9E2A432825DE52600083810E /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A432725DE52600083810E /* Date+Extension.swift */; };
+		9E2A432C25DE52A70083810E /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A432B25DE52A70083810E /* DateFormatter+Extension.swift */; };
+		9E2A432F25DE52C70083810E /* Number+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A432E25DE52C70083810E /* Number+Extension.swift */; };
+		9E2A433225DE52F50083810E /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A433125DE52F50083810E /* String+Extension.swift */; };
+		9E2A433525DE530E0083810E /* NSLocale+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A433425DE530E0083810E /* NSLocale+Extension.swift */; };
+		9E2A433825DE535E0083810E /* ReportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A433725DE535E0083810E /* ReportModel.swift */; };
+		9E2A433F25DE54F00083810E /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A433E25DE54F00083810E /* Color+Extension.swift */; };
+		9E2A434225DE55340083810E /* Style+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A434125DE55340083810E /* Style+Extension.swift */; };
+		9E2A435625DE68900083810E /* AddModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A435525DE68900083810E /* AddModel.swift */; };
+		9E2A435925DE68E80083810E /* MyWallet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A434425DE571F0083810E /* MyWallet.xcdatamodeld */; };
+		9E2A436225DE6A300083810E /* MWCategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A436125DE6A300083810E /* MWCategoryData.swift */; };
+		9E6BBD8725DEB9200034FC88 /* Categories+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6BBD8625DEB9200034FC88 /* Categories+CoreData.swift */; };
+		9E6BBD8B25DEB99A0034FC88 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6BBD8A25DEB99A0034FC88 /* Currency.swift */; };
+		9E6BBD9425DEBC930034FC88 /* Records+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6BBD9325DEBC930034FC88 /* Records+CoreData.swift */; };
+		9E6BBD9D25DEC8BD0034FC88 /* DashBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6BBD9C25DEC8BD0034FC88 /* DashBoardCell.swift */; };
+		9E6BBDA925DED2870034FC88 /* RecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6BBDA825DED2870034FC88 /* RecordCell.swift */; };
+		9E6BBDAC25DED3980034FC88 /* AddRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6BBDAB25DED3980034FC88 /* AddRecordViewController.swift */; };
+		9E6BBDB025DED6220034FC88 /* MWCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6BBDAF25DED6220034FC88 /* MWCustomView.swift */; };
+		9E6BBDB825DED7980034FC88 /* MWRecordHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E6BBDB725DED7980034FC88 /* MWRecordHeaderView.xib */; };
+		9E6BBDBB25DED7B20034FC88 /* MWRecordHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6BBDBA25DED7B20034FC88 /* MWRecordHeaderView.swift */; };
+		9E6BBDBF25DED8F60034FC88 /* DisplayRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6BBDBE25DED8F60034FC88 /* DisplayRecordViewController.swift */; };
+		9E6BBDC225DED9770034FC88 /* Records+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6BBDC125DED9770034FC88 /* Records+Extension.swift */; };
+		9E6BBDC525DED9CD0034FC88 /* Categories+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6BBDC425DED9CD0034FC88 /* Categories+Extension.swift */; };
+		9E93F5F125E0F10700D30DE2 /* ExchangeRateClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E93F5F025E0F10700D30DE2 /* ExchangeRateClient.swift */; };
+		9E93F5F425E0F6A300D30DE2 /* ExchangeErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E93F5F325E0F6A300D30DE2 /* ExchangeErrorResponse.swift */; };
+		9E93F5F825E100C100D30DE2 /* ExchangeRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E93F5F725E100C100D30DE2 /* ExchangeRateViewController.swift */; };
+		9E93F5FB25E1044100D30DE2 /* ExchangeRateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E93F5FA25E1044100D30DE2 /* ExchangeRateCell.swift */; };
+		9E93F5FE25E1259500D30DE2 /* ExchangeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E93F5FD25E1259500D30DE2 /* ExchangeResponse.swift */; };
+		9EC4D98225E004080046D2AD /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC4D98125E004080046D2AD /* UIViewController+Extension.swift */; };
+		9EC4D98525E008320046D2AD /* PickerBasedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC4D98425E008320046D2AD /* PickerBasedTextField.swift */; };
+		9EC4D99D25E024E80046D2AD /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC4D99C25E024E80046D2AD /* CategoriesViewController.swift */; };
+		9EC4D9A025E028220046D2AD /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC4D99F25E028220046D2AD /* CategoryCell.swift */; };
+		9EC4D9A325E02B3C0046D2AD /* AddCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC4D9A225E02B3C0046D2AD /* AddCategoryViewController.swift */; };
+		9EC4D9A625E0303F0046D2AD /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC4D9A525E0303F0046D2AD /* SettingCell.swift */; };
+		9EC4D9A925E035090046D2AD /* IconSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC4D9A825E035090046D2AD /* IconSelectorViewController.swift */; };
+		9EC4D9AC25E036230046D2AD /* IconCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC4D9AB25E036230046D2AD /* IconCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06282DB8D41784FED1F411D3 /* Pods-MyWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWallet.debug.xcconfig"; path = "Target Support Files/Pods-MyWallet/Pods-MyWallet.debug.xcconfig"; sourceTree = "<group>"; };
+		154D9A9E183BC1D7B7FCCDFC /* Pods_MyWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A857E95A4F50B3017E64A36 /* Pods-MyWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWallet.release.xcconfig"; path = "Target Support Files/Pods-MyWallet/Pods-MyWallet.release.xcconfig"; sourceTree = "<group>"; };
 		9E23B97D25DE16AB0037343C /* MyWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E23B98025DE16AB0037343C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E23B98225DE16AB0037343C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9E23B98425DE16AB0037343C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9E23B98425DE16AB0037343C /* ChooseCurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCurrencyViewController.swift; sourceTree = "<group>"; };
 		9E23B98725DE16AB0037343C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E23B98A25DE16AB0037343C /* MyWallet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyWallet.xcdatamodel; sourceTree = "<group>"; };
 		9E23B98C25DE16AE0037343C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E23B98F25DE16AE0037343C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E23B99125DE16AE0037343C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E2A430725DE4B690083810E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9E2A430A25DE4B940083810E /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		9E2A430D25DE4BAC0083810E /* BudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
+		9E2A431125DE4BB90083810E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9E2A431825DE4C7D0083810E /* CostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostCell.swift; sourceTree = "<group>"; };
+		9E2A431C25DE512E0083810E /* PersistentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentModel.swift; sourceTree = "<group>"; };
+		9E2A432025DE519E0083810E /* Facade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facade.swift; sourceTree = "<group>"; };
+		9E2A432325DE52060083810E /* MWMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MWMonth.swift; sourceTree = "<group>"; };
+		9E2A432725DE52600083810E /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		9E2A432B25DE52A70083810E /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		9E2A432E25DE52C70083810E /* Number+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Number+Extension.swift"; sourceTree = "<group>"; };
+		9E2A433125DE52F50083810E /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		9E2A433425DE530E0083810E /* NSLocale+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLocale+Extension.swift"; sourceTree = "<group>"; };
+		9E2A433725DE535E0083810E /* ReportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportModel.swift; sourceTree = "<group>"; };
+		9E2A433E25DE54F00083810E /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		9E2A434125DE55340083810E /* Style+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Style+Extension.swift"; sourceTree = "<group>"; };
+		9E2A434525DE571F0083810E /* MyWallet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyWallet.xcdatamodel; sourceTree = "<group>"; };
+		9E2A435525DE68900083810E /* AddModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddModel.swift; sourceTree = "<group>"; };
+		9E2A436125DE6A300083810E /* MWCategoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MWCategoryData.swift; sourceTree = "<group>"; };
+		9E6BBD8625DEB9200034FC88 /* Categories+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Categories+CoreData.swift"; sourceTree = "<group>"; };
+		9E6BBD8A25DEB99A0034FC88 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		9E6BBD9325DEBC930034FC88 /* Records+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Records+CoreData.swift"; sourceTree = "<group>"; };
+		9E6BBD9C25DEC8BD0034FC88 /* DashBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardCell.swift; sourceTree = "<group>"; };
+		9E6BBDA825DED2870034FC88 /* RecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCell.swift; sourceTree = "<group>"; };
+		9E6BBDAB25DED3980034FC88 /* AddRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecordViewController.swift; sourceTree = "<group>"; };
+		9E6BBDAF25DED6220034FC88 /* MWCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MWCustomView.swift; sourceTree = "<group>"; };
+		9E6BBDB725DED7980034FC88 /* MWRecordHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MWRecordHeaderView.xib; sourceTree = "<group>"; };
+		9E6BBDBA25DED7B20034FC88 /* MWRecordHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MWRecordHeaderView.swift; sourceTree = "<group>"; };
+		9E6BBDBE25DED8F60034FC88 /* DisplayRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayRecordViewController.swift; sourceTree = "<group>"; };
+		9E6BBDC125DED9770034FC88 /* Records+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Records+Extension.swift"; sourceTree = "<group>"; };
+		9E6BBDC425DED9CD0034FC88 /* Categories+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Categories+Extension.swift"; sourceTree = "<group>"; };
+		9E93F5F025E0F10700D30DE2 /* ExchangeRateClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateClient.swift; sourceTree = "<group>"; };
+		9E93F5F325E0F6A300D30DE2 /* ExchangeErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeErrorResponse.swift; sourceTree = "<group>"; };
+		9E93F5F725E100C100D30DE2 /* ExchangeRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateViewController.swift; sourceTree = "<group>"; };
+		9E93F5FA25E1044100D30DE2 /* ExchangeRateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateCell.swift; sourceTree = "<group>"; };
+		9E93F5FD25E1259500D30DE2 /* ExchangeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeResponse.swift; sourceTree = "<group>"; };
+		9EC4D98125E004080046D2AD /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		9EC4D98425E008320046D2AD /* PickerBasedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerBasedTextField.swift; sourceTree = "<group>"; };
+		9EC4D99C25E024E80046D2AD /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		9EC4D99F25E028220046D2AD /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		9EC4D9A225E02B3C0046D2AD /* AddCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoryViewController.swift; sourceTree = "<group>"; };
+		9EC4D9A525E0303F0046D2AD /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		9EC4D9A825E035090046D2AD /* IconSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconSelectorViewController.swift; sourceTree = "<group>"; };
+		9EC4D9AB25E036230046D2AD /* IconCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +124,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F0A38D7D7EEC0AB91D299D6 /* Pods_MyWallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12782B68D58FC2F844933B9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				154D9A9E183BC1D7B7FCCDFC /* Pods_MyWallet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C94B6AFD1947FD907196914 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06282DB8D41784FED1F411D3 /* Pods-MyWallet.debug.xcconfig */,
+				6A857E95A4F50B3017E64A36 /* Pods-MyWallet.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9E23B97425DE16AA0037343C = {
 			isa = PBXGroup;
 			children = (
 				9E23B97F25DE16AB0037343C /* MyWallet */,
 				9E23B97E25DE16AB0037343C /* Products */,
+				4C94B6AFD1947FD907196914 /* Pods */,
+				12782B68D58FC2F844933B9E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,14 +171,122 @@
 			children = (
 				9E23B98025DE16AB0037343C /* AppDelegate.swift */,
 				9E23B98225DE16AB0037343C /* SceneDelegate.swift */,
-				9E23B98425DE16AB0037343C /* ViewController.swift */,
-				9E23B98625DE16AB0037343C /* Main.storyboard */,
-				9E23B98C25DE16AE0037343C /* Assets.xcassets */,
-				9E23B98E25DE16AE0037343C /* LaunchScreen.storyboard */,
+				9E2A42FF25DE3AAC0083810E /* Views */,
+				9E2A431B25DE4E9B0083810E /* Model */,
+				9E2A430025DE3B000083810E /* Controllers */,
+				9E2A432625DE52470083810E /* Extensions */,
 				9E23B99125DE16AE0037343C /* Info.plist */,
 				9E23B98925DE16AB0037343C /* MyWallet.xcdatamodeld */,
 			);
 			path = MyWallet;
+			sourceTree = "<group>";
+		};
+		9E2A42FF25DE3AAC0083810E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E6BBDAE25DED5C80034FC88 /* Record Header */,
+				9E23B98625DE16AB0037343C /* Main.storyboard */,
+				9E23B98C25DE16AE0037343C /* Assets.xcassets */,
+				9E23B98E25DE16AE0037343C /* LaunchScreen.storyboard */,
+				9EC4D98425E008320046D2AD /* PickerBasedTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9E2A430025DE3B000083810E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9E2A430125DE3B270083810E /* Cell */,
+				9E2A430725DE4B690083810E /* HomeViewController.swift */,
+				9E2A430A25DE4B940083810E /* RecordViewController.swift */,
+				9E2A430D25DE4BAC0083810E /* BudgetViewController.swift */,
+				9E2A431125DE4BB90083810E /* SettingsViewController.swift */,
+				9E6BBDAB25DED3980034FC88 /* AddRecordViewController.swift */,
+				9E6BBDBE25DED8F60034FC88 /* DisplayRecordViewController.swift */,
+				9E23B98425DE16AB0037343C /* ChooseCurrencyViewController.swift */,
+				9EC4D99C25E024E80046D2AD /* CategoriesViewController.swift */,
+				9EC4D9A225E02B3C0046D2AD /* AddCategoryViewController.swift */,
+				9EC4D9A825E035090046D2AD /* IconSelectorViewController.swift */,
+				9E93F5F725E100C100D30DE2 /* ExchangeRateViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9E2A430125DE3B270083810E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9E2A431825DE4C7D0083810E /* CostCell.swift */,
+				9E6BBD9C25DEC8BD0034FC88 /* DashBoardCell.swift */,
+				9E6BBDA825DED2870034FC88 /* RecordCell.swift */,
+				9EC4D99F25E028220046D2AD /* CategoryCell.swift */,
+				9EC4D9A525E0303F0046D2AD /* SettingCell.swift */,
+				9EC4D9AB25E036230046D2AD /* IconCollectionCell.swift */,
+				9E93F5FA25E1044100D30DE2 /* ExchangeRateCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9E2A431B25DE4E9B0083810E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9E93F5EF25E0F0F300D30DE2 /* Networking */,
+				9E2A435F25DE69E90083810E /* Data */,
+				9E2A431C25DE512E0083810E /* PersistentModel.swift */,
+				9E2A432025DE519E0083810E /* Facade.swift */,
+				9E2A432325DE52060083810E /* MWMonth.swift */,
+				9E2A433725DE535E0083810E /* ReportModel.swift */,
+				9E2A435525DE68900083810E /* AddModel.swift */,
+				9E2A436125DE6A300083810E /* MWCategoryData.swift */,
+				9E6BBD8A25DEB99A0034FC88 /* Currency.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9E2A432625DE52470083810E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9E2A432725DE52600083810E /* Date+Extension.swift */,
+				9E2A432B25DE52A70083810E /* DateFormatter+Extension.swift */,
+				9E2A432E25DE52C70083810E /* Number+Extension.swift */,
+				9E2A433125DE52F50083810E /* String+Extension.swift */,
+				9E2A433425DE530E0083810E /* NSLocale+Extension.swift */,
+				9E2A433E25DE54F00083810E /* Color+Extension.swift */,
+				9E2A434125DE55340083810E /* Style+Extension.swift */,
+				9EC4D98125E004080046D2AD /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9E2A435F25DE69E90083810E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9E2A434425DE571F0083810E /* MyWallet.xcdatamodeld */,
+				9E6BBD8625DEB9200034FC88 /* Categories+CoreData.swift */,
+				9E6BBD9325DEBC930034FC88 /* Records+CoreData.swift */,
+				9E6BBDC125DED9770034FC88 /* Records+Extension.swift */,
+				9E6BBDC425DED9CD0034FC88 /* Categories+Extension.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9E6BBDAE25DED5C80034FC88 /* Record Header */ = {
+			isa = PBXGroup;
+			children = (
+				9E6BBDB725DED7980034FC88 /* MWRecordHeaderView.xib */,
+				9E6BBDAF25DED6220034FC88 /* MWCustomView.swift */,
+				9E6BBDBA25DED7B20034FC88 /* MWRecordHeaderView.swift */,
+			);
+			path = "Record Header";
+			sourceTree = "<group>";
+		};
+		9E93F5EF25E0F0F300D30DE2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9E93F5F025E0F10700D30DE2 /* ExchangeRateClient.swift */,
+				9E93F5F325E0F6A300D30DE2 /* ExchangeErrorResponse.swift */,
+				9E93F5FD25E1259500D30DE2 /* ExchangeResponse.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +296,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E23B99425DE16AE0037343C /* Build configuration list for PBXNativeTarget "MyWallet" */;
 			buildPhases = (
+				65238ECA3F0F6BA5DBA0CFCE /* [CP] Check Pods Manifest.lock */,
 				9E23B97925DE16AB0037343C /* Sources */,
 				9E23B97A25DE16AB0037343C /* Frameworks */,
 				9E23B97B25DE16AB0037343C /* Resources */,
+				010E22EAAAAD957148736F44 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,6 +348,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E6BBDB825DED7980034FC88 /* MWRecordHeaderView.xib in Resources */,
 				9E23B99025DE16AE0037343C /* LaunchScreen.storyboard in Resources */,
 				9E23B98D25DE16AE0037343C /* Assets.xcassets in Resources */,
 				9E23B98825DE16AB0037343C /* Main.storyboard in Resources */,
@@ -135,15 +357,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		010E22EAAAAD957148736F44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyWallet/Pods-MyWallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyWallet/Pods-MyWallet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyWallet/Pods-MyWallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65238ECA3F0F6BA5DBA0CFCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyWallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9E23B97925DE16AB0037343C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E23B98B25DE16AB0037343C /* MyWallet.xcdatamodeld in Sources */,
-				9E23B98525DE16AB0037343C /* ViewController.swift in Sources */,
+				9E93F5FB25E1044100D30DE2 /* ExchangeRateCell.swift in Sources */,
+				9E2A430825DE4B690083810E /* HomeViewController.swift in Sources */,
+				9E2A432F25DE52C70083810E /* Number+Extension.swift in Sources */,
+				9EC4D9A025E028220046D2AD /* CategoryCell.swift in Sources */,
+				9EC4D99D25E024E80046D2AD /* CategoriesViewController.swift in Sources */,
+				9E2A430E25DE4BAC0083810E /* BudgetViewController.swift in Sources */,
+				9E2A432125DE519E0083810E /* Facade.swift in Sources */,
+				9EC4D98225E004080046D2AD /* UIViewController+Extension.swift in Sources */,
+				9E2A433525DE530E0083810E /* NSLocale+Extension.swift in Sources */,
+				9EC4D9A925E035090046D2AD /* IconSelectorViewController.swift in Sources */,
+				9E23B98525DE16AB0037343C /* ChooseCurrencyViewController.swift in Sources */,
+				9E2A430B25DE4B940083810E /* RecordViewController.swift in Sources */,
+				9E6BBD8B25DEB99A0034FC88 /* Currency.swift in Sources */,
+				9E6BBDB025DED6220034FC88 /* MWCustomView.swift in Sources */,
+				9E2A433225DE52F50083810E /* String+Extension.swift in Sources */,
+				9E6BBDBB25DED7B20034FC88 /* MWRecordHeaderView.swift in Sources */,
 				9E23B98125DE16AB0037343C /* AppDelegate.swift in Sources */,
+				9E6BBDC525DED9CD0034FC88 /* Categories+Extension.swift in Sources */,
+				9E93F5F125E0F10700D30DE2 /* ExchangeRateClient.swift in Sources */,
+				9E6BBDC225DED9770034FC88 /* Records+Extension.swift in Sources */,
+				9E2A436225DE6A300083810E /* MWCategoryData.swift in Sources */,
+				9E93F5FE25E1259500D30DE2 /* ExchangeResponse.swift in Sources */,
+				9E2A433F25DE54F00083810E /* Color+Extension.swift in Sources */,
+				9E6BBDBF25DED8F60034FC88 /* DisplayRecordViewController.swift in Sources */,
+				9EC4D9A625E0303F0046D2AD /* SettingCell.swift in Sources */,
+				9E93F5F425E0F6A300D30DE2 /* ExchangeErrorResponse.swift in Sources */,
+				9E2A432C25DE52A70083810E /* DateFormatter+Extension.swift in Sources */,
+				9E6BBDA925DED2870034FC88 /* RecordCell.swift in Sources */,
+				9E2A435625DE68900083810E /* AddModel.swift in Sources */,
+				9E2A431D25DE512E0083810E /* PersistentModel.swift in Sources */,
+				9E6BBD8725DEB9200034FC88 /* Categories+CoreData.swift in Sources */,
+				9E2A435925DE68E80083810E /* MyWallet.xcdatamodeld in Sources */,
+				9EC4D9A325E02B3C0046D2AD /* AddCategoryViewController.swift in Sources */,
 				9E23B98325DE16AB0037343C /* SceneDelegate.swift in Sources */,
+				9E6BBD9425DEBC930034FC88 /* Records+CoreData.swift in Sources */,
+				9E2A431925DE4C7D0083810E /* CostCell.swift in Sources */,
+				9E93F5F825E100C100D30DE2 /* ExchangeRateViewController.swift in Sources */,
+				9EC4D98525E008320046D2AD /* PickerBasedTextField.swift in Sources */,
+				9E2A434225DE55340083810E /* Style+Extension.swift in Sources */,
+				9E2A433825DE535E0083810E /* ReportModel.swift in Sources */,
+				9E6BBDAC25DED3980034FC88 /* AddRecordViewController.swift in Sources */,
+				9E2A432825DE52600083810E /* Date+Extension.swift in Sources */,
+				9E2A431225DE4BB90083810E /* SettingsViewController.swift in Sources */,
+				9E6BBD9D25DEC8BD0034FC88 /* DashBoardCell.swift in Sources */,
+				9E2A432425DE52060083810E /* MWMonth.swift in Sources */,
+				9EC4D9AC25E036230046D2AD /* IconCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +593,7 @@
 		};
 		9E23B99525DE16AE0037343C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06282DB8D41784FED1F411D3 /* Pods-MyWallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +613,7 @@
 		};
 		9E23B99625DE16AE0037343C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A857E95A4F50B3017E64A36 /* Pods-MyWallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -353,6 +661,16 @@
 				9E23B98A25DE16AB0037343C /* MyWallet.xcdatamodel */,
 			);
 			currentVersion = 9E23B98A25DE16AB0037343C /* MyWallet.xcdatamodel */;
+			path = MyWallet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		9E2A434425DE571F0083810E /* MyWallet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9E2A434525DE571F0083810E /* MyWallet.xcdatamodel */,
+			);
+			currentVersion = 9E2A434525DE571F0083810E /* MyWallet.xcdatamodel */;
 			path = MyWallet.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
