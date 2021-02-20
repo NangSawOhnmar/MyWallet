@@ -1,0 +1,30 @@
+PODS:
+  - Charts (3.4.0):
+    - Charts/Core (= 3.4.0)
+  - Charts/Core (3.4.0)
+  - FontAwesome (4.5.0)
+  - FontAwesome.swift (1.9.1)
+  - Segmentio (4.1)
+
+DEPENDENCIES:
+  - Charts (~> 3.4.0)
+  - FontAwesome
+  - FontAwesome.swift
+  - Segmentio
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - FontAwesome
+    - FontAwesome.swift
+    - Segmentio
+
+SPEC CHECKSUMS:
+  Charts: 74c9f256eaf0460c0c416522d1cf8c634ea6b286
+  FontAwesome: dd8c48bf965e771309d8af17c4d8579217b3e756
+  FontAwesome.swift: 6b52cb7be66eacd28cbfaa0ca7ffd0de4a186a1d
+  Segmentio: ab29def64e1bff6e6e9b97671788a99bed3f1d9f
+
+PODFILE CHECKSUM: 5001c87c5b799ff4f44d2996ebf9c22de5f2b3dc
+
+COCOAPODS: 1.8.4

@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-MyWallet/Pods-MyWallet-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Charts/Charts.framework
+${BUILT_PRODUCTS_DIR}/FontAwesome/FontAwesome.framework
+${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework
+${BUILT_PRODUCTS_DIR}/Segmentio/Segmentio.framework
