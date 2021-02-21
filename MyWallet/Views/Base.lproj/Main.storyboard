@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o5q-Np-1Ro">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -142,25 +143,25 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CostCell" id="9fn-2E-3pD" customClass="CostCell" customModule="MyWallet" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="71.5" width="414" height="41.5"/>
+                                        <rect key="frame" x="0.0" y="71.5" width="414" height="41"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9fn-2E-3pD" id="Kcf-Nb-cyV">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="41.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CL-qF-wO3">
-                                                    <rect key="frame" x="16" y="10" width="42" height="21.5"/>
+                                                    <rect key="frame" x="16" y="10" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZB9-Ad-fLb">
-                                                    <rect key="frame" x="394" y="0.0" width="4" height="39.5"/>
+                                                    <rect key="frame" x="394" y="0.0" width="4" height="39"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Sg5-lP-Lsa">
-                                                    <rect key="frame" x="0.0" y="39.5" width="414" height="2"/>
+                                                    <rect key="frame" x="0.0" y="39" width="414" height="2"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="2" id="vdU-od-hlQ"/>
                                                     </constraints>
@@ -903,16 +904,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Uy-qF-au1">
-                                <rect key="frame" x="25" y="363" width="32" height="35"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Uy-qF-au1" customClass="PickerBasedTextField" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="25" y="363" width="4" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="vzi-u1-Eeh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M0h-PE-Jih">
-                                <rect key="frame" x="357" y="363" width="32" height="35"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M0h-PE-Jih" customClass="PickerBasedTextField" customModule="MyWallet" customModuleProvider="target">
+                                <rect key="frame" x="385" y="363" width="4" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="LYG-Bm-BDu"/>
                                 </constraints>
@@ -965,8 +966,8 @@
                     <navigationItem key="navigationItem" title="Add Record" id="dvT-vD-gaM"/>
                     <connections>
                         <outlet property="amountTextField" destination="oUC-IQ-Mg4" id="eiu-95-mlk"/>
-                        <outlet property="categoryTextField" destination="0Uy-qF-au1" id="h7M-JY-1yv"/>
-                        <outlet property="dateTextField" destination="M0h-PE-Jih" id="shD-cY-fSc"/>
+                        <outlet property="categoryTextField" destination="0Uy-qF-au1" id="WDi-4f-pRY"/>
+                        <outlet property="dateTextField" destination="M0h-PE-Jih" id="2ZM-zQ-zsm"/>
                         <outlet property="directionSegmentedControl" destination="i3O-MJ-sZ4" id="ilt-wp-lha"/>
                         <outlet property="prefixLabel" destination="cFr-aF-CwN" id="JHo-ml-gEr"/>
                     </connections>

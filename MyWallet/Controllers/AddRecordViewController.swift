@@ -12,9 +12,9 @@ class AddRecordViewController: UIViewController {
     
     @IBOutlet weak var directionSegmentedControl: UISegmentedControl!
     @IBOutlet weak var amountTextField: UITextField!
-    @IBOutlet weak var categoryTextField: UITextField!
     @IBOutlet weak var prefixLabel: UILabel!
-    @IBOutlet weak var dateTextField: UITextField!
+    @IBOutlet weak var categoryTextField: PickerBasedTextField!
+    @IBOutlet weak var dateTextField: PickerBasedTextField!
     
     var container: NSPersistentContainer!
     var categoryPicker: UIPickerView!
@@ -167,7 +167,6 @@ class AddRecordViewController: UIViewController {
         accountPicker.dataSource = self
         accountPicker.delegate = self
         
-        amountTextField.delegate = self
         amountTextField.becomeFirstResponder()
     }
     
