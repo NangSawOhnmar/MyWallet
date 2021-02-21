@@ -166,7 +166,7 @@ class AddRecordViewController: UIViewController {
         accountPicker = UIPickerView(frame: accFrame)
         accountPicker.dataSource = self
         accountPicker.delegate = self
-        
+        amountTextField.delegate = self
         amountTextField.becomeFirstResponder()
     }
     
@@ -299,7 +299,11 @@ extension AddRecordViewController: UIPickerViewDataSource, UIPickerViewDelegate 
 
 extension AddRecordViewController: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        return false
+        if textField is PickerBasedTextField {
+            return false
+        }else {
+            return true
+        }
     }
 
     func textFieldDidBeginEditing(_ textField: UITextField) {
@@ -307,7 +311,13 @@ extension AddRecordViewController: UITextFieldDelegate {
             let textField2 = textField as! PickerBasedTextField
             textField2.border.borderColor = UIColor.myAppBlue.cgColor
             textField2.textColor = UIColor.myAppBlue
+        }else {
+            amountTextField = textField
         }
+    }
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        return true
     }
 
     func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
