@@ -52,7 +52,10 @@ class ExchangeRateViewController: UIViewController {
         }
         self.exchangeRates = exchangeRates
         DispatchQueue.main.async {
-            self.dateLabel.text = "Last Update: \(self.exchangeRates[0].lastUpdateDate)"
+            guard let date = self.exchangeRates[0].lastUpdateDate else {
+                return
+            }
+            self.dateLabel.text = "Last Update: \(date)"
             self.tableView.reloadData()
             self.activityIndicatorView.stopAnimating()
         }

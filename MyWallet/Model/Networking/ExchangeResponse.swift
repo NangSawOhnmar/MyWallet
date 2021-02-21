@@ -19,5 +19,5 @@ struct Rate {
     let countryCode: String
     let countryName: String
     let amount: Double
-    let lastUpdateDate: String
+    let lastUpdateDate: String?
 }
