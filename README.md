@@ -9,6 +9,16 @@ I wanted to have a simple way to track how much I pay for some categories of goo
 - Define your budget and trace it
 - Currency converter based on exchange rate Api
 
+# Requirements
+- iOS 13.0+
+- Xcode 12.0+
+- Swift 5
+
+## How to install?
+- Install Cocoapods
+- Open terminal and run ```pod install```
+- Open the xcworkspace file with the latest version of Xcode
+
 ## Technical details
  - Swift
  - CoreData
