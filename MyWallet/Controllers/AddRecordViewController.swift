@@ -167,6 +167,7 @@ class AddRecordViewController: UIViewController {
         accountPicker.dataSource = self
         accountPicker.delegate = self
         
+        amountTextField.delegate = self
         amountTextField.becomeFirstResponder()
     }
     
@@ -316,5 +317,10 @@ extension AddRecordViewController: UITextFieldDelegate {
             textField2.border.borderColor = UIColor.black.cgColor
             textField2.textColor = UIColor.black
         }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }

@@ -39,7 +39,9 @@ class ExchangeRateClient {
                     
             for list in currencyList{
             let rate = data.rates.filter({$0.key == list.currencyCode})
-                exchangelist.append(Rate(currencyCode: list.currencyCode ?? "",currencyName: list.currencyName ?? "",countryCode: list.countryCode ?? "",countryName: list.countryName ?? "",amount: rate.values.first ?? 0.0, lastUpdateDate: data.date))
+                if let rateValue = rate.values.first {
+                    exchangelist.append(Rate(currencyCode: list.currencyCode ?? "",currencyName: list.currencyName ?? "",countryCode: list.countryCode ?? "",countryName: list.countryName ?? "",amount: rateValue, lastUpdateDate: data.date))
+                }
             }
             completionHandler(exchangelist, nil)
         }

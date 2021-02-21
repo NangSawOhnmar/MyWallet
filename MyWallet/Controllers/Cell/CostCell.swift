@@ -24,9 +24,9 @@ class CostCell: UITableViewCell {
         }
         budgetAmount.delegate = self
 
-        let bgColorView = UIView()
-        bgColorView.backgroundColor = UIColor.myAppLightOrange
-        self.selectedBackgroundView = bgColorView
+        let backgroundColorView = UIView()
+        backgroundColorView.backgroundColor = UIColor.myAppLightOrange
+        self.selectedBackgroundView = backgroundColorView
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -33,11 +33,11 @@ class ExchangeRateViewController: UIViewController {
     
     func flag(country:String) -> String {
         let base = 127397
-        var usv = String.UnicodeScalarView()
+        var uicodeScalarView = String.UnicodeScalarView()
         for i in country.utf16 {
-            usv.append(UnicodeScalar(base + Int(i))!)
+            uicodeScalarView.append(UnicodeScalar(base + Int(i))!)
         }
-        return String(usv)
+        return String(uicodeScalarView)
     }
     
     func getExchangeRate() {
@@ -52,10 +52,6 @@ class ExchangeRateViewController: UIViewController {
         }
         self.exchangeRates = exchangeRates
         DispatchQueue.main.async {
-            guard let date = self.exchangeRates[0].lastUpdateDate else {
-                return
-            }
-            self.dateLabel.text = "Last Update: \(date)"
             self.tableView.reloadData()
             self.activityIndicatorView.stopAnimating()
         }
@@ -76,10 +72,13 @@ extension ExchangeRateViewController: UITableViewDelegate, UITableViewDataSource
         cell.symbolLabel.text = currencyItem.currencyCode
         cell.nameLabel.text = currencyItem.countryName
         cell.iconLabel.text = flag(country: currencyItem.countryCode)
+//        guard let amount = currencyItem.amount else{
+//            return
+//        }
+        cell.amountLabel.text = "\(currencyItem.amount)"
         
-        if currencyItem.amount != 0.0 {
-            cell.amountLabel.text = "\(currencyItem.amount)"
-        }
+        self.dateLabel.text = "Last Update: \(self.exchangeRates[0].lastUpdateDate ?? "")"
+        
 
         return cell
     }
